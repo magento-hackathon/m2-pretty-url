@@ -45,13 +45,23 @@ class Url extends AbstractHelper
 
         $data = parse_url($url);
         // TODO: remove substituted values from URL
-        rtrim($data['path'], '/');
-        $data['path'] .= '/' . self::DELIMITER . '/' . $label . '/';
+        $data['path'] = rtrim($data['path'], '/');
+        $delimiter = ($this->shouldAddDelimiter($data['path'])) ? $this->getDelimiterChar() . '/' : '';
+        $data['path'] .= '/' . $delimiter . $label . '/';
         // TODO: use \Magento\Framework\Url\Helper\Data::removeRequestParam()
         $url = $this->unparseUrl($data);
         $result = $this->_urlBuilder->getRouteUrl($url);
 
         return $result;
+    }
+
+    // todo: parse code=option_id from url path
+    public function getUrlParametersFromPath($urlPath)
+    {
+        return [
+            'blue' => ['color' => 65],
+
+        ];
     }
 
     public function createKey($label)
@@ -81,5 +91,18 @@ class Url extends AbstractHelper
     public function getSpecialCharReplacement()
     {
         return self::SPECIAL_CHAR;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDelimiterChar()
+    {
+        return self::DELIMITER;
+    }
+
+    public function shouldAddDelimiter($url)
+    {
+        return false === strpos($url, '/' . $this->getDelimiterChar() . '/');
     }
 }
