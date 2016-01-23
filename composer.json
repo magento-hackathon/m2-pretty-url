@@ -15,6 +15,21 @@
       "name": "Remko Jantzen",
       "email": "r.jantzen@ism.nl",
       "role": "developer"
+    },
+    {
+      "name": "Aleksandr Yegorov",
+      "email": "a.yegorov@ism.nl",
+      "role": "developer"
+    },
+    {
+      "name": "Daniel van der Mierden",
+      "email": "dvdmierden@high-teck.com",
+      "role": "developer"
+    },
+    {
+      "name": "Irina Vozianova",
+      "email": "i.vozianova@ism.nl",
+      "role": "project manager"
     }
   ],
   "require": {
