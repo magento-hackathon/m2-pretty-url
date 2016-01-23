@@ -2,7 +2,7 @@
   "name": "hackathon/module-prettyurl",
   "description": "Human readable URLs for layered navigation",
   "type": "magento2-module",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/magento-hackathon/m2-pretty-url/",
   "license": "MIT",
   "authors": [
