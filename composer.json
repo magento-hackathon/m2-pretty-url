@@ -1,0 +1,29 @@
+
+{
+  "name": "magento-hackathon/Hackathon_Prettyurl",
+  "description": "Human readable URLs for layered navigation",
+  "type": "magento2-module",
+  "version": "0.1.0",
+  "homepage": "https://github.com/magento-hackathon/m2-pretty-url/",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sander Mangel",
+      "email": "sander@sandermangel.nl",
+      "role": "developer"
+    }
+  ],
+  "require": {
+    "php": "~5.6.0|~7.0.0",
+    "magento/framework": "100.0.*",
+  },
+  "minimum-stability": "stable",
+  "autoload": {
+    "files": [
+      "src/Hackathon/Prettyurl/registration.php"
+    ],
+    "psr-4": {
+      "Hackathon\\Prettyurl\\": "src/Hackathon/Prettyurl/"
+    }
+  }
+}
