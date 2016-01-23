@@ -54,5 +54,13 @@
     "psr-4": {
       "Hackathon\\Prettyurl\\": ""
     }
+  },
+  "extra": {
+    "map": [
+      [
+        "*",
+        "Hackathon/Prettyurl"
+      ]
+    ]
   }
 }
