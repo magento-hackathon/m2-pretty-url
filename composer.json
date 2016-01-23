@@ -10,6 +10,11 @@
       "name": "Sander Mangel",
       "email": "sander@sandermangel.nl",
       "role": "developer"
+    },
+    {
+      "name": "Remko Jantzen",
+      "email": "r.jantzen@ism.nl",
+      "role": "developer"
     }
   ],
   "require": {
