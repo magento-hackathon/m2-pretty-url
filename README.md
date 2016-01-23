@@ -1,4 +1,4 @@
 # Hackathon Prettyurl
 =====================
 
-add SEO friendly URLs for layered navigation. Mapping `http://domain.com/shoes/adidas/men` to `http://domain.com/shoes/?brand=2&gender=5`.
+Build and use pretty URLs in Catalog Layered Navigation. Mapping `http://domain.com/shoes/adidas/men` to `http://domain.com/shoes/?brand=2&gender=5`.
